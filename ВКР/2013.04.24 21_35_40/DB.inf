@@ -1,0 +1,62 @@
+[Main]
+DBVersion=11
+DBState=OK
+BaseName=
+NoQueryNameInStart=1
+[Actions]
+DeleteOutdatedNormDats=24.04.2013
+CheckTrimSpaces=01.01.2002 0:10:14
+NewVerify=24.04.2013 21:35:40
+PackTables=24.04.2013 21:35:40
+CheckEqualTestsNames=24.04.2013 21:24:15
+[ShablsTime]
+AppDrvStb.bpl=1077902675-110592
+AudioTst.bpl=1077902675-119296
+Balls.bpl=1077902675-775680
+Balls3.bpl=1077902675-761344
+Butterfly.bpl=1077902675-424960
+Clock.bpl=1077902641-747520
+ControlPFS.bpl=1077902644-148480
+Cross.bpl=1077902675-121856
+Evolv.bpl=1077902675-117760
+FigCross.bpl=1077902675-768000
+Figure.bpl=1077902676-776704
+FlyCubes.bpl=1077902641-728064
+GenSig.bpl=1077902676-84480
+GoProc.bpl=1077902676-143360
+Hunter.bpl=1077902676-934400
+IsoMio.bpl=1077902676-90624
+JumpNuts.bpl=1077902676-427008
+Labyrinth.bpl=1077902640-727040
+MultMonSt.bpl=1077902676-219648
+MyoPrb.bpl=1077902676-149504
+Octaedr.bpl=1077902676-131584
+Rectis.bpl=1077902676-1398784
+SeatMKTester.bpl=1077902647-210432
+SeatProb_02.bpl=1077902676-276480
+SeatTester.bpl=1077902676-150528
+Silomer.bpl=1077902676-237056
+StepDev.bpl=1077902676-92160
+Syntez.bpl=1077902676-822272
+Tetris.bpl=1077902676-1381376
+Trngl.bpl=1077902676-158720
+TstExe.bpl=1077902676-82944
+Univers.bpl=1077902676-399360
+UnivPuls.bpl=1077902676-125952
+VegKorr.bpl=1077902676-119296
+[AutoImported]
+Методики билатеральных исследований=BD_Bilat
+Методика допускового контроля=BD_Dopusk
+Методики силометрии=BD_Dynamo
+Методики миомонитора=BD_MyoMonitor
+Методики миографии (в составе стабилоанализатора)=BD_MyoStb
+Методики дыхания=BD_PG
+Методики вариационной пульсометрии=BD_Pulse
+Методики очувствленного кресла=BD_Seat
+Методики стабилографии (профессиональная версия)=BD_StabProfessional
+[RecentOpenedTests]
+0=1
+1=2
+[Backups]
+2002.01.01 00_51_13=1
+Date=01.01.2002

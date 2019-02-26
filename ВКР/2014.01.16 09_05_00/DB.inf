@@ -1,0 +1,55 @@
+[Main]
+DBVersion=11
+DBState=OK
+[Actions]
+DeleteOutdatedNormDats=16.01.2014
+CheckTrimSpaces=01.01.2002 0:19:08
+NewVerify=16.01.2014 9:05:00
+PackTables=01.01.2002 0:29:14
+CheckEqualTestsNames=16.01.2014 9:04:41
+[ShablsTime]
+AirFight.bpl=1125149460-756224
+AppDrvStb.bpl=1125149460-110592
+AudioTst.bpl=1125149460-120832
+Balls.bpl=1125149460-784384
+Balls3.bpl=1125149460-770560
+Clock.bpl=1125149428-748544
+ControlPFS.bpl=1125149431-149504
+Cross.bpl=1125149460-123904
+Evolv.bpl=1125149460-119296
+FigCross.bpl=1125149460-776192
+Figure.bpl=1125149460-784896
+FlyCubes.bpl=1125149428-729088
+GenSig.bpl=1125149460-86016
+GoProc.bpl=1125149460-146432
+Hunter.bpl=1125149460-945152
+Inventory.bpl=1125149434-53248
+IsoMio.bpl=1125149460-91648
+Labyrinth.bpl=1125149427-728064
+MultMonSt.bpl=1125149460-221184
+Octaedr.bpl=1125149460-132608
+Rectis.bpl=1125149460-1408000
+SeatMKTester.bpl=1125149433-304640
+SeatProb_02.bpl=1125149460-277504
+SeatTester.bpl=1125149460-150528
+Silomer.bpl=1125149460-246784
+StepDev.bpl=1125149460-93696
+Syntez.bpl=1125149460-823296
+Tetris.bpl=1125149460-1392640
+Trngl.bpl=1125149460-159744
+TstExe.bpl=1125149460-82944
+Univers.bpl=1125149460-406016
+UnivPuls.bpl=1125149460-125952
+VegKorr.bpl=1125149460-119296
+[AutoImported]
+Методика допускового контроля=BD_Dopusk
+Методики силометрии=BD_Dynamo
+Методики дыхания=BD_PG
+Методики вариационной пульсометрии=BD_Pulse
+Методики очувствленного кресла=BD_Seat
+Методики стабилографии (профессиональная версия)=BD_StabProfessional
+[RecentOpenedTests]
+0=3
+[Backups]
+2002.01.01 00_29_14=1
+Date=01.01.2002
