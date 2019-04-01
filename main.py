@@ -2,6 +2,7 @@ import sys  # sys нужен для передачи argv в QApplication
 import os
 from PyQt5 import QtWidgets
 import design  # Это наш конвертированный файл дизайна
+import sqlite3
 
 class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
     def __init__(self):
@@ -26,6 +27,7 @@ def main():
     window = ExampleApp()  # Создаём объект класса ExampleApp
     window.show()  # Показываем окно
     app.exec_()  # и запускаем приложение
+
 
 if __name__ == '__main__':  # Если мы запускаем файл напрямую, а не импортируем
     main()  # то запускаем функцию main()
