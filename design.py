@@ -1,42 +1,29 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'untitled.ui'
-#
-# Created by: PyQt5 UI code generator 5.11.3
-#
-# WARNING! All changes made in this file will be lost!
+from PyQt5 import QtWidgets  # данный модуль содержит классы, реализующие графический интерфейс
+import sys  # при помощи этого модуля будем использовать список параметров
 
-from PyQt5 import QtCore, QtGui, QtWidgets
-
-class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
-        MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(410, 331)
-        self.centralwidget = QtWidgets.QWidget(MainWindow)
-        self.centralwidget.setObjectName("centralwidget")
-        self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
-        self.verticalLayout.setObjectName("verticalLayout")
-        self.listWidget = QtWidgets.QListWidget(self.centralwidget)
-        self.listWidget.setMaximumSize(QtCore.QSize(500, 500))
-        self.listWidget.setObjectName("listWidget")
-        self.verticalLayout.addWidget(self.listWidget)
-        self.horizontalLayout = QtWidgets.QHBoxLayout()
-        self.horizontalLayout.setObjectName("horizontalLayout")
-        self.btnBrowse = QtWidgets.QPushButton(self.centralwidget)
-        self.btnBrowse.setObjectName("btnBrowse")
-        self.horizontalLayout.addWidget(self.btnBrowse)
-        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setObjectName("pushButton")
-        self.horizontalLayout.addWidget(self.pushButton)
-        self.verticalLayout.addLayout(self.horizontalLayout)
-        MainWindow.setCentralWidget(self.centralwidget)
-
-        self.retranslateUi(MainWindow)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
-
-    def retranslateUi(self, MainWindow):
-        _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.btnBrowse.setText(_translate("MainWindow", "Выберите папку"))
-        self.pushButton.setText(_translate("MainWindow", "Нет, не против"))
-
+app = QtWidgets.QApplication(sys.argv)  # создаем объект-приложение
+sizes = app.desktop().screenGeometry()  # получаем размеры экрана устройства
+SCREEN_HEIGHT = sizes.height()  # получаем высоту экрана
+SCREEN_WIDTH = sizes.width()  # получаем ширину экрана
+window = QtWidgets.QWidget()  # создаем объект-окно
+window.setWindowTitle("Первая программа на PyQt")  # устанавливаем заголовок окна
+window.resize(SCREEN_WIDTH, SCREEN_HEIGHT)  # задаем минимальные размеры окна
+label = QtWidgets.QLabel("<center>Привет, мир!</center>")  # создаем объект надписи
+btnQuit = QtWidgets.QPushButton("&Закрыть окно")  # создаем объект-кнопку
+'''
+при помощи амперсанда перед надписью создается кнопка быстрого доступа:
+если зажать Alt и нажать букву, стоящую после амперсанда, кнопка сработает
+'''
+vbox = QtWidgets.QVBoxLayout()  # создаем вертикальный контейнер
+vbox.addWidget(label)    # добавляем объекты
+vbox.addWidget(btnQuit)  # в контейнер
+window.setLayout(vbox)  # добавление контейнера в окно
+'''
+добавляем обработчик сигнала clicked, который генерируется при ее нажатии;
+через метод connect() назначаем ему обработчик (передается первым параметром)  
+'''
+btnQuit.clicked.connect(app.quit)
+window.show()  # выводим на экран окно и все ранее добавленные компоненты
+sys.exit(app.exec_())  # запускаем бесконечный цикл обработки событий в приложении
