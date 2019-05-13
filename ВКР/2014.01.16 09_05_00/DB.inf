@@ -1,6 +1,6 @@
 [Main]
-DBVersion=11
-DBState=OK
+DBVersion=12
+DBState=BAD
 [Actions]
 DeleteOutdatedNormDats=16.01.2014
 CheckTrimSpaces=01.01.2002 0:19:08
@@ -53,3 +53,5 @@ VegKorr.bpl=1125149460-119296
 [Backups]
 2002.01.01 00_29_14=1
 Date=01.01.2002
+2019.05.01 00_04_13=1
+2019.05.01 00_04_17=1

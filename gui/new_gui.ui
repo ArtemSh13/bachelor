@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1362</width>
+    <height>924</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1362</width>
+    <height>924</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="maximumSize">
+    <size>
+     <width>1362</width>
+     <height>873</height>
+    </size>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1341</width>
+      <height>861</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="mainLayout">
+     <item row="6" column="3">
+      <layout class="QGridLayout" name="calcMethodSelectionLayout">
+       <item row="1" column="0" alignment="Qt::AlignHCenter">
+        <widget class="QRadioButton" name="FourierCalcButton">
+         <property name="text">
+          <string>Фурье-анализ</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="calcMethodSelectionLabel">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Выбор метода обработки&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0" alignment="Qt::AlignHCenter">
+        <widget class="QRadioButton" name="WalchCalcButton">
+         <property name="text">
+          <string>Велч-анализ</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="5" column="1">
+      <layout class="QVBoxLayout" name="signal1PanelLayout">
+       <item alignment="Qt::AlignHCenter">
+        <widget class="QCheckBox" name="signal1ShowcheckBox">
+         <property name="maximumSize">
+          <size>
+           <width>79</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Сигнал 1</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="signal1DownloadButton">
+         <property name="text">
+          <string>Загрузить Сигнал 1</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="signal1DeleteButton">
+         <property name="text">
+          <string>Удалить Сигнал 1</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="6" column="0">
+      <layout class="QGridLayout" name="signalSourceSelectionLayout">
+       <item row="1" column="0">
+        <layout class="QVBoxLayout" name="directSourceLayout">
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QRadioButton" name="directOxButton">
+           <property name="text">
+            <string>Ox</string>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QRadioButton" name="directOyButton">
+           <property name="text">
+            <string>Oy</string>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QRadioButton" name="directOzButton">
+           <property name="text">
+            <string>Oz</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="1">
+        <layout class="QVBoxLayout" name="momentsSourceLayout">
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QRadioButton" name="momentPxButton">
+           <property name="text">
+            <string>Px</string>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QRadioButton" name="momentPyButton">
+           <property name="text">
+            <string>Py</string>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QRadioButton" name="momentPzButton">
+           <property name="text">
+            <string>Pz</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="0" colspan="2">
+        <widget class="QLabel" name="signalSourceSelectionLabel">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Выбор источника сигнала&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="5" column="2">
+      <layout class="QVBoxLayout" name="signal2PanelLayout">
+       <item alignment="Qt::AlignHCenter">
+        <widget class="QCheckBox" name="signal2ShowcheckBox">
+         <property name="text">
+          <string>Сигнал 2</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="signal2DownloadButton">
+         <property name="text">
+          <string>Загрузить Сигнал 2</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="signal2DeletepushButton">
+         <property name="text">
+          <string>Удалить Сигнал 2</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="3" column="0">
+      <widget class="QGraphicsView" name="rightSeatView"/>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLabel" name="leftHandLabel">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Левый подлокотник&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" colspan="2">
+      <widget class="QLabel" name="backrestLabel">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Спинка&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1" colspan="2">
+      <widget class="QLabel" name="signalShowLabel">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Отображение сигналов&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <widget class="QGraphicsView" name="leftFootView"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QGraphicsView" name="rightHandView">
+       <property name="minimumSize">
+        <size>
+         <width>534</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>534</width>
+         <height>223</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1" rowspan="3" colspan="2" alignment="Qt::AlignHCenter">
+      <widget class="QGraphicsView" name="backrestView"/>
+     </item>
+     <item row="3" column="3">
+      <widget class="QGraphicsView" name="leftSeatView"/>
+     </item>
+     <item row="1" column="3">
+      <widget class="QGraphicsView" name="leftHandView"/>
+     </item>
+     <item row="4" column="3">
+      <widget class="QLabel" name="leftFootLabel">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Левая платформа&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QLabel" name="leftSeatLabel">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Левое сиденье&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="rightSeatLabel">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Правое сиденье&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QGraphicsView" name="rightFootView"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="rightFootLabel">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+         <strikeout>false</strikeout>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Правая платформа&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="rightHandLabel">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Правый подлокотник&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1362</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>rightHandView</tabstop>
+  <tabstop>backrestView</tabstop>
+  <tabstop>leftHandView</tabstop>
+  <tabstop>rightSeatView</tabstop>
+  <tabstop>leftSeatView</tabstop>
+  <tabstop>rightFootView</tabstop>
+  <tabstop>leftFootView</tabstop>
+  <tabstop>signal1ShowcheckBox</tabstop>
+  <tabstop>signal2ShowcheckBox</tabstop>
+  <tabstop>signal1DownloadButton</tabstop>
+  <tabstop>signal2DownloadButton</tabstop>
+  <tabstop>signal1DeleteButton</tabstop>
+  <tabstop>signal2DeletepushButton</tabstop>
+  <tabstop>directOxButton</tabstop>
+  <tabstop>directOyButton</tabstop>
+  <tabstop>directOzButton</tabstop>
+  <tabstop>momentPxButton</tabstop>
+  <tabstop>momentPyButton</tabstop>
+  <tabstop>momentPzButton</tabstop>
+  <tabstop>FourierCalcButton</tabstop>
+  <tabstop>WalchCalcButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,6 +1,6 @@
 [Main]
-DBVersion=11
-DBState=OK
+DBVersion=12
+DBState=Activation
 BaseName=
 NoQueryNameInStart=1
 [Actions]
@@ -60,3 +60,5 @@ VegKorr.bpl=1077902676-119296
 [Backups]
 2002.01.01 00_51_13=1
 Date=01.01.2002
+2019.05.01 20_20_13=1
+2019.05.01 20_20_16=1
